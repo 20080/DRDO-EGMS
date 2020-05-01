@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="89.0" prefWidth="456.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InitSetupWiz.InternalsClass.AnchorpString">
+   <children>
+      <PasswordField fx:id="Fiedl2" layoutX="327.0" layoutY="34.0" onKeyReleased="#TwoFiledActionRelesed" prefHeight="25.0" prefWidth="144.0" />
+      <PasswordField fx:id="Field1" layoutX="160.0" layoutY="34.0" onKeyReleased="#OneFiledActionRelesed" prefHeight="25.0" prefWidth="144.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Please keep this key in safe place it will be required every time you login">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="38.0" text="Please enter a 16 digit key">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="327.0" layoutY="67.0" text="Renter to verify">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="SetButton" layoutX="414.0" layoutY="63.0" mnemonicParsing="false" onAction="#OnSetAction" prefHeight="25.0" prefWidth="57.0" text="Set" />
+      <Label layoutX="15.0" layoutY="59.0" text="And Press Set">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ImageID" fitHeight="25.0" fitWidth="28.0" layoutX="483.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="160.0" layoutY="67.0" text="Enter the key">
+         <font>
+            <Font name="Calibri Light" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

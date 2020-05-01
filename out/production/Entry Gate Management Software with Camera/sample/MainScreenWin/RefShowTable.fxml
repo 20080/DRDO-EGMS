@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainScreenWin.RefShowTable">
+   <center>
+      <TableView fx:id="TableMain" editable="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn fx:id="IDColumn" prefWidth="52.0" text="ID" />
+          <TableColumn fx:id="NameColumn" text="NAME" />
+          <TableColumn fx:id="CompanyColumn" prefWidth="103.0" text="COMPANY" />
+            <TableColumn fx:id="AddressColumn" prefWidth="111.0" text="ADDRESS" />
+            <TableColumn fx:id="PurposeColumn" prefWidth="97.0" text="PURPOSE" />
+            <TableColumn fx:id="DateColumn" prefWidth="77.0" text="DATE " />
+            <TableColumn fx:id="PhoneNoColumn" prefWidth="91.0" text="PHONE NO" />
+            <TableColumn fx:id="SittingPlaceColumn" prefWidth="95.0" text="SITTING PLACE" />
+            <TableColumn fx:id="UserColumn" prefWidth="132.0" text="USER" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <MenuBar style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="IDDelete" mnemonicParsing="false" onAction="#OnDeleteMenuItem" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <HBox prefHeight="42.0" prefWidth="648.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="42.0" prefWidth="255.0" HBox.hgrow="ALWAYS" />
+            <Label text="Filter">
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="42.0" prefWidth="28.0" />
+            <TextField fx:id="FilterField" onKeyReleased="#OnFilterkyeRelesed">
+               <HBox.margin>
+                  <Insets top="12.0" />
+               </HBox.margin>
+            </TextField>
+            <Region prefHeight="42.0" prefWidth="20.0" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

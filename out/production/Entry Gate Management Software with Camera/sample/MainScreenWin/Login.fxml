@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="BP2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainScreenWin.login">
+    <center>
+        <VBox fx:id="LoginVBox" prefHeight="190.0" prefWidth="312.0" BorderPane.alignment="CENTER">
+            <children>
+                <Region prefHeight="14.0" prefWidth="429.0" />
+                <Label fx:id="SetupLabel1" prefHeight="18.0" prefWidth="378.0" text="Login">
+                    <font>
+                        <Font name="Calibri Light" size="16.0" />
+                    </font>
+                </Label>
+                <Region prefHeight="75.0" prefWidth="539.0" />
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                  <Label fx:id="SetupLabel11" prefHeight="18.0" prefWidth="87.0" text="Username">
+                     <font>
+                        <Font name="Calibri Light" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="UsernameField" />
+                        <Region prefHeight="57.0" prefWidth="25.0" />
+                  <Label fx:id="SetupLabel111" layoutX="10.0" layoutY="10.0" prefHeight="18.0" prefWidth="95.0" text="Password">
+                     <font>
+                        <Font name="Calibri Light" size="16.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="PasswordField" onAction="#OnPAsswordAction" />
+                    </children>
+                </HBox>
+                <Region prefHeight="188.0" prefWidth="429.0" />
+            </children>
+        </VBox>
+    </center>
+    <right>
+        <Region prefHeight="311.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+    </right>
+    <left>
+        <Region prefHeight="226.0" prefWidth="61.0" BorderPane.alignment="CENTER" />
+    </left>
+    <top>
+        <VBox prefHeight="89.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Region prefHeight="11.0" prefWidth="600.0" />
+            <MenuBar fx:id="MenuBarID" style="-fx-background-color: #FFFFFF;">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem fx:id="AdvancedPrivLogin" mnemonicParsing="false" onAction="#OnAdvancedPrivLogin" text="Privileged login" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+                <HBox prefHeight="74.0" prefWidth="600.0">
+                    <children>
+                        <HBox prefHeight="77.0" prefWidth="465.0">
+                            <children>
+                                <Region prefHeight="77.0" prefWidth="16.0" />
+                                <ImageView fx:id="CloseImage" fitHeight="27.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" />
+                            </children>
+                        </HBox>
+                        <ImageView fx:id="ImageID1" fitHeight="77.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                        </ImageView>
+                        <Region prefHeight="77.0" prefWidth="27.0" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+    <bottom>
+        <HBox fx:id="BottomHB" prefHeight="60.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Region prefHeight="60.0" prefWidth="58.0" />
+                <Label fx:id="SetupLabel2" prefHeight="18.0" prefWidth="271.0" text="Press Login to Start">
+                    <font>
+                        <Font name="Calibri Light" size="16.0" />
+                    </font>
+                </Label>
+                <Region prefHeight="81.0" prefWidth="157.0" />
+                <Button fx:id="NextButton2" mnemonicParsing="false" onAction="#Next2ButtonAction" prefHeight="25.0" prefWidth="109.0" text="Login" />
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

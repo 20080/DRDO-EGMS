@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Anchor" prefHeight="408.0" prefWidth="605.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainScreenWin.NewUserCreation">
+   <children>
+      <TextField fx:id="UsernameF" layoutX="31.0" layoutY="173.0" promptText="Username" />
+      <PasswordField fx:id="PasswordF" layoutX="204.0" layoutY="173.0" promptText="Password" />
+      <PasswordField fx:id="RPasswordF" layoutX="376.0" layoutY="173.0" onAction="#EnterBUTTONAction" promptText="Re-enter Password" />
+      <Label layoutX="31.0" layoutY="80.0" text="New User Creation">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="88.0" fitWidth="108.0" layoutX="417.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Drawables/1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="150.0" text="Username" />
+      <Label layoutX="204.0" layoutY="150.0" text="Password" />
+      <Label layoutX="376.0" layoutY="150.0" text="Verify Password" />
+      <Button fx:id="CreateButton" layoutX="471.0" layoutY="220.0" mnemonicParsing="false" onAction="#CreateButtonAction" text="Create" />
+   </children>
+</AnchorPane>

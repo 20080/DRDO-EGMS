@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="1048.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainScreenWin.ShowTable">
+   <center>
+      <TableView fx:id="DetailsTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="VIDcolumn" prefWidth="78.0" text="VISITOR NO." />
+          <TableColumn fx:id="NameColumn" prefWidth="100.0" text="NAME" />
+            <TableColumn fx:id="CompanyColumn" prefWidth="134.0" text="COMPANY" />
+            <TableColumn fx:id="AddressColumn" prefWidth="108.0" text="ADDRESS" />
+            <TableColumn fx:id="PurposeColumn" prefWidth="97.0" text="PURPOSE" />
+            <TableColumn fx:id="TimentryColumn" prefWidth="108.0" text="TIME OF ENTRY" />
+            <TableColumn fx:id="DateEntryColumn" prefWidth="115.0" text="DATE OF ENTRY" />
+            <TableColumn fx:id="NationalityColumn" prefWidth="97.0" text="NATIONALITY" />
+            <TableColumn fx:id="PhoneNoColumn" prefWidth="108.0" text="PHONE NO." />
+            <TableColumn fx:id="UserColumn" prefWidth="75.0" text="USER." />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <MenuBar fx:id="Menubartable" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="Select" mnemonicParsing="false" onAction="#PrintSelectMenu" text="Print Selected Item" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+                  <MenuItem mnemonicParsing="false" onAction="#OnBlackList" text="BlackList Selected" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <AnchorPane prefHeight="38.0" prefWidth="894.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="FieldId" layoutX="912.0" layoutY="6.0" onKeyReleased="#FilterListAction" prefHeight="20.0" prefWidth="122.0" />
+            <Label layoutX="845.0" layoutY="15.0" prefHeight="16.0" prefWidth="67.0" text="Filter Field">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

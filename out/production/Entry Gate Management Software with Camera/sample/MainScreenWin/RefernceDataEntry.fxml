@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="BP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="591.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainScreenWin.RefernceDataEntry">
+   <left>
+      <AnchorPane prefHeight="375.0" prefWidth="554.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="25.0" layoutY="14.0" text="Provide the visitor's Details" />
+            <Line endX="100.0" layoutX="126.0" layoutY="32.0" startX="-100.0" />
+            <Label layoutX="26.0" layoutY="87.0" text="Name" />
+            <TextField fx:id="NameField" layoutX="26.0" layoutY="104.0" onMouseClicked="#Mouse" />
+            <TextField fx:id="CompanyField" layoutX="215.0" layoutY="104.0" onMouseClicked="#Mouse" />
+            <Label layoutX="215.0" layoutY="87.0" text="Company" />
+            <TextField fx:id="PhonenoField" layoutX="402.0" layoutY="104.0" onMouseClicked="#Mouse" />
+            <Label layoutX="402.0" layoutY="87.0" text="Phone No" />
+            <DatePicker fx:id="Datepicker" layoutX="25.0" layoutY="167.0" onAction="#OnDatePicker" showWeekNumbers="true" />
+            <Label layoutX="25.0" layoutY="150.0" text="Date of appointment" />
+            <Label layoutX="26.0" layoutY="201.0" text="Address" />
+            <TextArea fx:id="AddressField" layoutX="26.0" layoutY="218.0" prefHeight="122.0" prefWidth="181.0" />
+            <TextField fx:id="PurposeField" layoutX="215.0" layoutY="167.0" onMouseClicked="#Mouse" />
+            <Label layoutX="215.0" layoutY="150.0" text="Purpose" />
+            <Label layoutX="402.0" layoutY="150.0" text="Room No/ Sitting Place" />
+            <TextField fx:id="RoomNoField" layoutX="402.0" layoutY="167.0" onMouseClicked="#Mouse" />
+            <ImageView fx:id="ShowLodedPhoto" fitHeight="89.0" fitWidth="117.0" layoutX="215.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="SubmitButton" layoutX="451.0" layoutY="315.0" mnemonicParsing="false" onAction="#OnSubmitButtonAction" prefHeight="25.0" prefWidth="100.0" text="Submit" />
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <MenuBar style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="NewUserMenuItem" mnemonicParsing="false" onAction="#NewUserAction" text="Add new user" />
+                  <MenuItem fx:id="CloseMenuitem" mnemonicParsing="false" onAction="#OnCloseMenuItem" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="AddPhotoMenuItem" mnemonicParsing="false" onAction="#OnAddPhotoMenuItem" text="Add a photo (Optional)" />
+                  <MenuItem fx:id="ManageEntriesMenuItem" mnemonicParsing="false" onAction="#OnManageEntresAction" text="Manage entries" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

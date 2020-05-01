@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="KotlinJavaRuntime">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-runtime.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-reflect.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/New folder (2)/Reading/webcam-capture-0.3.10.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/New folder (2)/Reading/libs/bridj-0.6.2.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/New folder (2)/Reading/libs/slf4j-api-1.7.2.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/New folder (2)/SDK/controlsfx-8.20.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/kotlin-runtime-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

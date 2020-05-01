@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_entry_gate_management_software_with_camera" default="compile.module.entry_gate_management_software_with_camera">
+  <dirname property="module.entry_gate_management_software_with_camera.basedir" file="${ant.file.module_entry_gate_management_software_with_camera}"/>
+  
+  <property name="module.jdk.home.entry_gate_management_software_with_camera" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.entry_gate_management_software_with_camera" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.entry_gate_management_software_with_camera" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.entry_gate_management_software_with_camera" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="entry_gate_management_software_with_camera.output.dir" value="${module.entry_gate_management_software_with_camera.basedir}/out/production/Entry Gate Management Software with Camera"/>
+  <property name="entry_gate_management_software_with_camera.testoutput.dir" value="${module.entry_gate_management_software_with_camera.basedir}/out/test/Entry Gate Management Software with Camera"/>
+  
+  <path id="entry_gate_management_software_with_camera.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="entry_gate_management_software_with_camera.module.production.classpath">
+    <path refid="${module.jdk.classpath.entry_gate_management_software_with_camera}"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-lang-2.6-bin/commons-lang-2.6/commons-lang-2.6.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-configuration-1.10-bin/commons-configuration-1.10/commons-configuration-1.10-tests.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-configuration-1.10-bin/commons-configuration-1.10/commons-configuration-1.10.jar"/>
+    <pathelement location="${basedir}/../../../../Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.40-bin.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Reading/webcam-capture-0.3.10.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Reading/libs/bridj-0.6.2.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Reading/libs/slf4j-api-1.7.2.jar"/>
+    <pathelement location="${basedir}"/>
+    <pathelement location="${basedir}/../../Downloads/logback-classic-1.0.13.jar"/>
+    <pathelement location="${basedir}/../../Downloads/logback-core-1.0.13.jar"/>
+  </path>
+  
+  <path id="entry_gate_management_software_with_camera.runtime.production.module.classpath">
+    <pathelement location="${entry_gate_management_software_with_camera.output.dir}"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-lang-2.6-bin/commons-lang-2.6/commons-lang-2.6.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-configuration-1.10-bin/commons-configuration-1.10/commons-configuration-1.10-tests.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-configuration-1.10-bin/commons-configuration-1.10/commons-configuration-1.10.jar"/>
+    <pathelement location="${basedir}/../../../../Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.40-bin.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Reading/webcam-capture-0.3.10.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Reading/libs/bridj-0.6.2.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Reading/libs/slf4j-api-1.7.2.jar"/>
+    <pathelement location="${basedir}"/>
+    <pathelement location="${basedir}/../../Downloads/logback-classic-1.0.13.jar"/>
+    <pathelement location="${basedir}/../../Downloads/logback-core-1.0.13.jar"/>
+  </path>
+  
+  <path id="entry_gate_management_software_with_camera.module.classpath">
+    <path refid="${module.jdk.classpath.entry_gate_management_software_with_camera}"/>
+    <pathelement location="${entry_gate_management_software_with_camera.output.dir}"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-lang-2.6-bin/commons-lang-2.6/commons-lang-2.6.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-configuration-1.10-bin/commons-configuration-1.10/commons-configuration-1.10-tests.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-configuration-1.10-bin/commons-configuration-1.10/commons-configuration-1.10.jar"/>
+    <pathelement location="${basedir}/../../../../Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.40-bin.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Reading/webcam-capture-0.3.10.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Reading/libs/bridj-0.6.2.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Reading/libs/slf4j-api-1.7.2.jar"/>
+    <pathelement location="${basedir}"/>
+    <pathelement location="${basedir}/../../Downloads/logback-classic-1.0.13.jar"/>
+    <pathelement location="${basedir}/../../Downloads/logback-core-1.0.13.jar"/>
+  </path>
+  
+  <path id="entry_gate_management_software_with_camera.runtime.module.classpath">
+    <pathelement location="${entry_gate_management_software_with_camera.testoutput.dir}"/>
+    <pathelement location="${entry_gate_management_software_with_camera.output.dir}"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-lang-2.6-bin/commons-lang-2.6/commons-lang-2.6.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-configuration-1.10-bin/commons-configuration-1.10/commons-configuration-1.10-tests.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Apache Properties/commons-configuration-1.10-bin/commons-configuration-1.10/commons-configuration-1.10.jar"/>
+    <pathelement location="${basedir}/../../../../Program Files (x86)/MySQL/Connector.J 5.1/mysql-connector-java-5.1.40-bin.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Reading/webcam-capture-0.3.10.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Reading/libs/bridj-0.6.2.jar"/>
+    <pathelement location="${basedir}/../../Desktop/Reading/libs/slf4j-api-1.7.2.jar"/>
+    <pathelement location="${basedir}"/>
+    <pathelement location="${basedir}/../../Downloads/logback-classic-1.0.13.jar"/>
+    <pathelement location="${basedir}/../../Downloads/logback-core-1.0.13.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.entry_gate_management_software_with_camera">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.entry_gate_management_software_with_camera">
+    <patternset refid="excluded.from.module.entry_gate_management_software_with_camera"/>
+  </patternset>
+  
+  <path id="entry_gate_management_software_with_camera.module.sourcepath">
+    <dirset dir="${module.entry_gate_management_software_with_camera.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.entry_gate_management_software_with_camera" depends="compile.module.entry_gate_management_software_with_camera.production,compile.module.entry_gate_management_software_with_camera.tests" description="Compile module Entry Gate Management Software with Camera"/>
+  
+  <target name="compile.module.entry_gate_management_software_with_camera.production" depends="register.custom.compilers" description="Compile module Entry Gate Management Software with Camera; production classes">
+    <mkdir dir="${entry_gate_management_software_with_camera.output.dir}"/>
+    <javac2 destdir="${entry_gate_management_software_with_camera.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.entry_gate_management_software_with_camera}/javac">
+      <compilerarg line="${compiler.args.entry_gate_management_software_with_camera}"/>
+      <bootclasspath refid="entry_gate_management_software_with_camera.module.bootclasspath"/>
+      <classpath refid="entry_gate_management_software_with_camera.module.production.classpath"/>
+      <src refid="entry_gate_management_software_with_camera.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.entry_gate_management_software_with_camera"/>
+    </javac2>
+    
+    <copy todir="${entry_gate_management_software_with_camera.output.dir}">
+      <fileset dir="${module.entry_gate_management_software_with_camera.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.entry_gate_management_software_with_camera.tests" depends="register.custom.compilers,compile.module.entry_gate_management_software_with_camera.production" description="compile module Entry Gate Management Software with Camera; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.entry_gate_management_software_with_camera" description="cleanup module">
+    <delete dir="${entry_gate_management_software_with_camera.output.dir}"/>
+    <delete dir="${entry_gate_management_software_with_camera.testoutput.dir}"/>
+  </target>
+</project>

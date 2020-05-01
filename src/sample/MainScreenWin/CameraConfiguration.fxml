@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="208.0" prefWidth="443.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainScreenWin.CameraConfiguration">
+  <tabs>
+    <Tab text="Camera Resolution  Setting">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="WidthBox" layoutX="86.0" layoutY="77.0" prefHeight="25.0" prefWidth="54.0" promptText="Width" />
+                  <TextField fx:id="HeightBox" layoutX="164.0" layoutY="77.0" prefHeight="25.0" prefWidth="54.0" promptText="Height" />
+                  <Text layoutX="149.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="x" />
+                  <Button fx:id="SetButtonRes" layoutX="163.0" layoutY="117.0" mnemonicParsing="false" onAction="#OnSetAction1StSet" prefHeight="25.0" prefWidth="56.0" text="Set" />
+                  <Label layoutX="86.0" layoutY="46.0" text="Width" />
+                  <Label layoutX="164.0" layoutY="46.0" text="Height" />
+                  <Label layoutX="7.0" layoutY="157.0" text="Warning :" />
+                  <Label layoutX="64.0" layoutY="157.0" text="The height and widht must be in ratio of ..... else camera may not work" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Mode Selection">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="MultiRadio" layoutX="14.0" layoutY="47.0" mnemonicParsing="false" text="Multiple camera mode">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="toggle" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="DefaultRadio" layoutX="14.0" layoutY="99.0" mnemonicParsing="false" text="Default Camera mode" toggleGroup="$toggle" />
+                  <Button fx:id="SetButton" layoutX="178.0" layoutY="116.0" mnemonicParsing="false" onAction="#OnSetActionCameraMode" prefHeight="25.0" prefWidth="67.0" text="Set" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
